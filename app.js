@@ -49,7 +49,7 @@ const defaultTimeline = [
   {
     date: "School days",
     title: "When Our Eyes First Met",
-    desc: "i rememeber you sitting 3 or 2 seats before me in bus and i wonder "damn, she kinda looks pretty." but i was hesitated and we started talking as bro and sis"
+    desc: "i rememeber you sitting 3 or 2 seats before me in bus and i wonder 'damn, she kinda looks pretty.' but i was hesitated and we started talking as bro and sis"
   },
   {
     date: "our bond grew",
