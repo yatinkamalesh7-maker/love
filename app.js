@@ -20,7 +20,7 @@ const defaultProfile = {
 
 const defaultSlides = [
   {
-    image: "IMG_20260228_145605150.jpg",
+    image: "photo1.jpg",
     title: "Golden Hour Strolls",
     location: "Sunset Bay • Summer",
     desc: "Walking hand in hand as the sky turned warm peach and gold. One of my favorite evenings in history."
