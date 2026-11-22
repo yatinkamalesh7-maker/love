@@ -12,10 +12,10 @@ const STORAGE_KEY_TIMELINE = 'romantic_couple_timeline';
 const defaultProfile = {
   partner1: "Yatin",
   partner2: "Laya",
-  anniversary: "2024-11-22T00:00:00",
-  quote: "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.",
-  letterText: "I built this tiny corner on the web because no ordinary gift could ever measure up to what you mean to me.\n\nThank you for filling my days with warmth, your infectious laugh, your patience, and the purest love I have ever known. With you, every ordinary day turns into a movie scene.\n\nNo matter how busy the world gets, this place will always be here to remind us of our laughter, our late night walks, and every dream we are yet to chase together.",
-  letterSigner: "Your Biggest Fan ❤️"
+  anniversary: "2025-01-1022T00:00:00",
+  quote: "In a world full of billion people. i choose you, i love youu so muchhh mwahhahahah you the best girlfriend in the entire universe!!<333",
+  letterText: "I built this tiny website to keep this as our memory, and to see how far we have come all this way to where we are now.\n\nMwahhh for filling my days with joy, your laugh, your patience, and the purest love I have ever known and mwah for always being with me, udk how grateful i am to be with you, laya.\n\nNo matter how busy the world gets, this place will always be here to remind us of our love and memory of us and we will keeping cherishing each other, fighting, ragebaiting and getting pissed over small things and still flirting and laughing with each other. i want this for life, laya. i love you babygurl.",
+  letterSigner: "Your Yatin<3"
 };
 
 const defaultSlides = [
