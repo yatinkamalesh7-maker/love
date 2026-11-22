@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story ❤️</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%200%22%20100%22%20100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Canvas Confetti for celebrations -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Hearts Canvas Background -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="heart-pulse">❤️</span>
+        <span id="nav-names">Us &amp; Always</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#slideshow">Slides</a>
+        <a href="#timeline">Memories</a>
+        <a href="#games">Games</a>
+        <a href="#letter">Love Letter</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Background Music Player Button -->
+        <button id="music-btn" class="icon-btn" title="Toggle Romantic Music">
+          <span class="music-icon">🎵</span>
+          <span class="music-text">Music</span>
+        </button>
+
+        <!-- Quick Customizer Button -->
+        <button id="customize-btn" class="pill-btn secondary" title="Personalize your names and date">
+          ⚙️ Customize
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Live Love Counter -->
+  <header class="hero" id="hero">
+    <div class="hero-content">
+      <div class="badge">Every second with you is magic ✨</div>
+      <h1 class="hero-title">
+        <span id="partner1-name">My Love</span> 
+        <span class="and-symbol">&amp;</span> 
+        <span id="partner2-name">Forever</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-quote">
+        "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."
+      </p>
+
+      <!-- Anniversary Live Counter -->
+      <div class="counter-card">
+        <div class="counter-header">
+          <span class="counter-tag">WE HAVE BEEN IN LOVE FOR</span>
+        </div>
+        <div class="countdown-grid" id="love-counter">
+          <div class="count-box">
+            <span class="count-num" id="days">000</span>
+            <span class="count-label">Days</span>
+          </div>
+          <div class="count-box">
+            <span class="count-num" id="hours">00</span>
+            <span class="count-label">Hours</span>
+          </div>
+          <div class="count-box">
+            <span class="count-num" id="minutes">00</span>
+            <span class="count-label">Minutes</span>
+          </div>
+          <div class="count-box">
+            <span class="count-num" id="seconds">00</span>
+            <span class="count-label">Seconds</span>
+          </div>
+        </div>
+        <p class="anniversary-date-display">Since <span id="anniversary-text">November 22, 2024</span> ✨</p>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="#slideshow" class="pill-btn primary">Explore Our Moments 📸</a>
+        <a href="#games" class="pill-btn glass">Play Couple Games 🎮</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Photo Slideshow Section -->
+  <section class="section slideshow-section" id="slideshow">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">SLIDES &amp; SNAPSHOTS</span>
+        <h2 class="section-title">Our Favorite Memories</h2>
+        <p class="section-desc">Swipe through the chapters of our story, smiles, trips, and golden sunsets.</p>
+      </div>
+
+      <!-- Slideshow Container -->
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          <!-- Slides injected dynamically by app.js -->
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-arrow prev" id="carousel-prev" aria-label="Previous Slide">‹</button>
+        <button class="carousel-arrow next" id="carousel-next" aria-label="Next Slide">›</button>
+
+        <!-- Slide Indicators -->
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+
+      <!-- Add New Memory Button -->
+      <div class="add-memory-bar">
+        <button id="add-slide-btn" class="pill-btn secondary">
+          ➕ Add Our Photo to Slides
+        </button>
+        <button id="reset-slides-btn" class="pill-btn text-only" title="Reset to default memories if needed">
+          🔄 Reset Default Photos
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey / Timeline Section -->
+  <section class="section timeline-section" id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">THE MILESTONES</span>
+        <h2 class="section-title">How It All Began</h2>
+        <p class="section-desc">Every day with you is special, but these dates changed my whole universe.</p>
+      </div>
+
+      <div class="timeline" id="timeline-list">
+        <!-- Timeline items will be generated by JavaScript -->
+      </div>
+
+      <div class="timeline-action">
+        <button id="add-timeline-btn" class="pill-btn secondary">
+          ➕ Add Another Milestone
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Couple Games Section -->
+  <section class="section games-section" id="games">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FOR FUN &amp; SMILES</span>
+        <h2 class="section-title">Our Games Room</h2>
+        <p class="section-desc">Little romantic games crafted specially for you and me.</p>
+      </div>
+
+      <!-- Games Navigation Tabs -->
+      <div class="game-tabs">
+        <button class="game-tab-btn active" data-game="match">🃏 Memory Card Match</button>
+        <button class="game-tab-btn" data-game="quiz">❓ How Well Do You Know Us?</button>
+        <button class="game-tab-btn" data-game="reasons">💌 Love Reasons Jar</button>
+      </div>
+
+      <!-- Game 1: Memory Match -->
+      <div class="game-panel active" id="game-match">
+        <div class="game-card">
+          <div class="game-instructions">
+            <h3>Match The Romantic Pairs!</h3>
+            <p>Find all matching couples symbols to unlock a special message.</p>
+            <div class="game-stats">
+              <span>Moves: <strong id="moves-count">0</strong></span>
+              <span>Matches: <strong id="matches-count">0</strong> / 8</span>
+              <button id="restart-match-btn" class="pill-btn text-only">↺ Restart</button>
+            </div>
+          </div>
+          <div class="memory-grid" id="memory-grid">
+            <!-- 16 cards injected by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Game 2: Couple Quiz -->
+      <div class="game-panel" id="game-quiz">
+        <div class="game-card quiz-card">
+          <div class="quiz-header">
+            <span class="quiz-step" id="quiz-progress">Question 1 of 5</span>
+            <span class="quiz-score">Score: <strong id="quiz-score">0</strong></span>
+          </div>
+
+          <div id="quiz-body">
+            <h3 class="quiz-question" id="quiz-question">Loading question...</h3>
+            <div class="quiz-options" id="quiz-options">
+              <!-- Options injected by JS -->
+            </div>
+          </div>
+
+          <div id="quiz-result" class="quiz-result hidden">
+            <div class="result-trophy">🏆💖</div>
+            <h3 id="result-title">You Did It!</h3>
+            <p id="result-message">You know our love story by heart.</p>
+            <button id="retry-quiz-btn" class="pill-btn primary">Play Again</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game 3: 100 Reasons Why I Love You Jar -->
+      <div class="game-panel" id="game-reasons">
+        <div class="game-card reasons-card">
+          <div class="jar-visual">
+            <div class="jar-icon">🏺✨</div>
+            <h3>The "Why I Adore You" Jar</h3>
+            <p>Every time you need a smile, tap the heart to draw a sweet reason.</p>
+          </div>
+
+          <div class="reason-display-box" id="reason-box">
+            <div class="heart-seal">❤️</div>
+            <p class="reason-text" id="reason-text">"Click the button below to pull a love note from the jar!"</p>
+            <span class="reason-number" id="reason-number">Note #1</span>
+          </div>
+
+          <button id="draw-reason-btn" class="pill-btn primary">
+            💌 Pull A Love Note
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Love Letter Section -->
+  <section class="section letter-section" id="letter">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FROM MY HEART</span>
+        <h2 class="section-title">A Letter For You</h2>
+        <p class="section-desc">Tap on the wax seal to open your special handwritten letter.</p>
+      </div>
+
+      <div class="envelope-wrapper">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-pocket"></div>
+          
+          <div class="wax-seal" id="wax-seal">
+            <span>❤️</span>
+            <small>OPEN</small>
+          </div>
+
+          <div class="letter-paper" id="letter-paper">
+            <div class="letter-inner">
+              <span class="letter-stamp">Always &amp; Forever</span>
+              <h3 class="letter-salutation">My Dearest <span class="partner-name-display">Angel</span>,</h3>
+              
+              <div class="letter-content" id="letter-body">
+                <p>
+                  I built this tiny corner on the web because no ordinary gift could ever measure up to what you mean to me.
+                </p>
+                <p>
+                  Thank you for filling my days with warmth, your infectious laugh, your patience, and the purest love I have ever known. With you, every ordinary day turns into a movie scene.
+                </p>
+                <p>
+                  No matter how busy the world gets, this place will always be here to remind us of our laughter, our late night talks, and every dream we are yet to chase together.
+                </p>
+              </div>
+
+              <div class="letter-signature">
+                <p>With all my love,</p>
+                <h4 id="letter-signer">Your Biggest Fan ❤️</h4>
+              </div>
+
+              <button id="edit-letter-btn" class="pill-btn text-only letter-edit-trigger">✏️ Edit This Letter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Made with all my heart for <span class="partner-name-display">my favorite person</span> ❤️</p>
+      <p class="footer-sub">Forever &amp; Always • Since <span class="anniversary-year-display">2024</span></p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Personalize & Customize (Names, Dates, Song) -->
+  <div class="modal-overlay" id="customize-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>✨ Personalize Your Website</h3>
+        <button class="modal-close" id="close-modal">&times;</button>
+      </div>
+      <form id="customize-form" class="customize-form">
+        <div class="form-group">
+          <label for="input-partner1">Your Name / Nickname</label>
+          <input type="text" id="input-partner1" placeholder="e.g. Alex" required>
+        </div>
+        <div class="form-group">
+          <label for="input-partner2">Her Name / Nickname</label>
+          <input type="text" id="input-partner2" placeholder="e.g. Maya" required>
+        </div>
+        <div class="form-group">
+          <label for="input-date">The Day You Got Together (Anniversary)</label>
+          <input type="date" id="input-date" required>
+        </div>
+        <div class="form-group">
+          <label for="input-quote">Romantic Hero Subtitle / Quote</label>
+          <textarea id="input-quote" rows="2" placeholder="Write a short sweet quote..."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="pill-btn primary">Save Changes ❤️</button>
+          <button type="button" class="pill-btn glass" id="cancel-modal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Add New Memory Slide -->
+  <div class="modal-overlay" id="add-slide-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>📸 Add A New Photo Slide</h3>
+        <button class="modal-close" id="close-slide-modal">&times;</button>
+      </div>
+      <form id="slide-form" class="customize-form">
+        <div class="form-group">
+          <label for="slide-title">Caption / Title</label>
+          <input type="text" id="slide-title" placeholder="e.g. Sunset beach walk" required>
+        </div>
+        <div class="form-group">
+          <label for="slide-location">Location / Date</label>
+          <input type="text" id="slide-location" placeholder="e.g. Santa Monica • July 2025" required>
+        </div>
+        <div class="form-group">
+          <label for="slide-desc">Sweet Memory Note</label>
+          <textarea id="slide-desc" rows="2" placeholder="What made this moment unforgettable?"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="slide-file">Upload Photo (from your phone or PC)</label>
+          <input type="file" id="slide-file" accept="image/*" required>
+          <small class="form-hint">Tip: Photos are automatically saved right inside your browser!</small>
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="pill-btn primary">Add to Slideshow 💫</button>
+          <button type="button" class="pill-btn glass" id="cancel-slide-modal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Edit Love Letter -->
+  <div class="modal-overlay" id="edit-letter-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>💌 Edit Your Love Letter</h3>
+        <button class="modal-close" id="close-letter-modal">&times;</button>
+      </div>
+      <form id="letter-form" class="customize-form">
+        <div class="form-group">
+          <label for="edit-letter-text">Your Love Letter (Paragraphs separated by enters)</label>
+          <textarea id="edit-letter-text" rows="8" placeholder="Type your personal letter here..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="edit-letter-signer-input">Signature / Sign-off</label>
+          <input type="text" id="edit-letter-signer-input" placeholder="e.g. Forever yours, Alex ❤️">
+        </div>
+        <div class="modal-actions">
+          <button type="submit" class="pill-btn primary">Save Letter 💌</button>
+          <button type="button" class="pill-btn glass" id="cancel-letter-modal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hidden Web Audio synthesizer for ambient romantic chime & chords (no external audio file dependencies needed!) -->
+  <script src="app.js"></script>
+</body>
+</html>
