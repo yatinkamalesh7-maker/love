@@ -26,7 +26,7 @@ const defaultSlides = [
     desc: "first time that we met and when we had our first kiss :) and you gave me hickyy and huggiess and kichesss an unforgettable moment that i spent with my cutie <3"
   },
   {
-    image: "photo3",
+    image: "photo3.jpg",
     title: "PONGAL FAIRR PEAKK",
     location: "annai arul pee school on 10 january",
     desc: "you wore big maja earrings for me, and u looked so beautifull i was mostly searching for you. we werent a couple back then, but we know we had something for each otherr<3"
@@ -74,7 +74,7 @@ const defaultSlides = [
     desc: "you sent me this pic saying dad took. it became one of my fac pics of you. looking like a baby eating ice cream you lit a baby di."
   },
   {
-    image: "photo8.jpg",
+    image: "photo8.png",
     title: "wonderful beautiful saree queennn :O",
     location: "your home on april 2",
     desc: "you said you wanted to try a saree you were going to wear for a wedding to attend. so you wore it and showed me. and istg you looked so stunning. idk im just madly in love with you baby"
