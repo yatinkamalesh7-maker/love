@@ -10,8 +10,8 @@ const STORAGE_KEY_SLIDES = 'romantic_couple_slides';
 const STORAGE_KEY_TIMELINE = 'romantic_couple_timeline';
 
 const defaultProfile = {
-  partner1: "Alex",
-  partner2: "Maya",
+  partner1: "Yatin",
+  partner2: "Laya",
   anniversary: "2024-11-22T00:00:00",
   quote: "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.",
   letterText: "I built this tiny corner on the web because no ordinary gift could ever measure up to what you mean to me.\n\nThank you for filling my days with warmth, your infectious laugh, your patience, and the purest love I have ever known. With you, every ordinary day turns into a movie scene.\n\nNo matter how busy the world gets, this place will always be here to remind us of our laughter, our late night walks, and every dream we are yet to chase together.",
@@ -47,48 +47,48 @@ const defaultSlides = [
 
 const defaultTimeline = [
   {
-    date: "Day One",
+    date: "School days",
     title: "When Our Eyes First Met",
-    desc: "The moment the universe decided to bring us together. I still remember the exact spark in your smile."
+    desc: "i rememeber you sitting 3 or 2 seats before me in bus and i wonder "damn, she kinda looks pretty." but i was hesitated and we started talking as bro and sis"
   },
   {
-    date: "First Official Date",
-    title: "Butterflies & Endless Laughter",
-    desc: "We talked so long they had to turn the restaurant lights off. Neither of us wanted the night to end."
+    date: "our bond grew",
+    title: "Bus days",
+    desc: "we used to talk about hentai lmao, apro we talked chumma about random things, you said pick up lines i said too as bro and sis poda."
   },
   {
     date: "The Leap",
-    title: "You & Me, Officially",
-    desc: "The easiest 'yes' of our lives. The start of our forever adventure."
+    title: "the gap",
+    desc: "after a large break of not talking, you approached me in insta and we found each other again"
   },
   {
-    date: "First Little Trip",
-    title: "Exploring New Horizons",
-    desc: "Getting lost together in a new town, eating midnight street food, and taking silly selfies."
+    date: "First time",
+    title: "feelings",
+    desc: "after my kerala trip, we both started to realise that we had feelings for each other."
   },
   {
     date: "Today & Beyond",
     title: "Loving You More Everyday",
-    desc: "Every sunrise is sweeter with you. Building our dream life together, one step at a time."
+    desc: "rn we are the best and most perfect couple there is. and i jus love you so much cutie. you always gon be my baby."
   }
 ];
 
 const loveReasons = [
-  "The way your eyes crinkle whenever you laugh really hard.",
-  "How safe and peaceful your hugs make me feel after a long tiring day.",
-  "Your pure kindness to everyone and animals around you.",
-  "The adorable way you get excited over your favorite foods.",
-  "How you believe in my dreams even when I doubt myself.",
-  "Your warm hands holding mine in cold weather.",
-  "The random silly dances we break into in the kitchen.",
-  "How gorgeous you look first thing in the morning with messy hair.",
-  "Your voice when you whisper goodnight.",
-  "How you remember tiny details about what I like.",
+  "The way your eyes jus look at me, omg i will die and get lost in your eyes.",
+  "How your hugs make me feel like a babyy im your babyy",
+  "You only being kind only to mee yes im selfish idc abt others fuck others.",
+  "The adorable way you get excited over your favorite foodss",
+  "How you believe in me even when i doubt myself. i love you.",
+  "Your warm hands holding mine in cold weather. I NEED.",
+  "The random silly dances i gon do with you soonn while hugging youu",
+  "How gorgeous you look first thing in the morning with messy hair. and those red cheeks omgg",
+  "Your voice when you whisper goodnight and kich meee.",
+  "How you jus forget something you were talking abt 2 seconds ago like a goldfish lmao",
   "The way you make any boring errand feel like an adventure.",
-  "How deeply you care, love, and protect the people close to you.",
-  "Your infectious smile that instantly brightens the darkest room.",
-  "The comfort of silence when we are together and need no words.",
-  "Simply because you are you, and nobody in the universe compares."
+  "How deeply you care, love, and protect me from the darkness of this world.",
+  "Your smile, i goon to your smile.",
+  "The comfort of silence when we are together and need no words. omg i love this, doing nothing and looking at each other.",
+  "Simply because you are you, and nobody in the universe can EVER BE YOU, laya my babygurl."
 ];
 
 // --- Application State ---
@@ -533,8 +533,8 @@ const quizQuestions = [
   {
     q: "Who takes longer to get ready when we go out?",
     options: ["Definitely Her! 💄", "Me (Alex) 🕶️", "It's an exact tie ⏱️", "Whoever woke up last 😴"],
-    answer: 0,
-    cheer: "Haha, beauty takes time and she's worth every single minute! ✨"
+    answer: 2,
+    cheer: "we get ready at same time cuz we bath togather ;)"
   },
   {
     q: "Who is the master of giving the warmest, coziest cuddles?",
@@ -546,19 +546,19 @@ const quizQuestions = [
     q: "What is our official love language?",
     options: ["Quality time & deep talks 💬", "Stealing each other's food 🍟", "Silly inside jokes & laughter 😂", "All of the above! 💖"],
     answer: 3,
-    cheer: "Correct! We check every single box of happiness together."
+    cheer: "Correct! we do everythinggg<33"
   },
   {
     q: "Who loves who more?",
     options: ["She loves me more", "I love her more to infinity and beyond!", "It's a tie", "It's an endless competition"],
     answer: 1,
-    cheer: "I will never lose this competition, I love you more than words can say! ❤️"
+    cheer: "I will never lose this competition, I love you more than words can say❤️"
   },
   {
     q: "What is our plan for the future?",
     options: ["Travel the world together ✈️", "Build our dream home 🏡", "Grow old and silly together 👴👵", "All these and infinite love ✨"],
     answer: 3,
-    cheer: "To forever and always, my love!"
+    cheer: "To forever and always, my love, my laya<3"
   }
 ];
 
