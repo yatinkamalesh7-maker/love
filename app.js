@@ -21,28 +21,76 @@ const defaultProfile = {
 const defaultSlides = [
   {
     image: "photo1.jpg",
-    title: "Golden Hour Strolls",
-    location: "Sunset Bay • Summer",
-    desc: "Walking hand in hand as the sky turned warm peach and gold. One of my favorite evenings in history."
+    title: "motta maadi meet 1",
+    location: "motta maadi on 28 febuary",
+    desc: "first time that we met and when we had our first kiss :) and you gave me hickyy and huggiess and kichesss an unforgettable moment that i spent with my cutie <3"
   },
   {
-    image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=80",
-    title: "Cozy Coffee & Long Talks",
-    location: "Our Favorite Café",
-    desc: "The morning hours melted away while we laughed about everything and nothing at all."
+    image: "photo3",
+    title: "PONGAL FAIRR PEAKK",
+    location: "annai arul pee school on 10 january",
+    desc: "you wore big maja earrings for me, and u looked so beautifull i was mostly searching for you. we werent a couple back then, but we know we had something for each otherr<3"
   },
   {
-    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1200&q=80",
-    title: "Under The City Lights",
-    location: "Downtown Rooftop",
-    desc: "Looking at the skyline was pretty, but you were looking at me, and that was breathtaking."
+    image: "photo2.jpg",
+    title: "motta maadi meet 2",
+    location: "motta maadi on 28 march",
+    desc: "motta maadi meett number 2!! we madeoutt as always you kinda slept while hugging me, we kich all over each other face and i fell on your feet before u left asking for 10 mins XD"
   },
   {
-    image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1200&q=80",
-    title: "Every Little Roadtrip",
-    location: "Highway & Open Skies",
-    desc: "Windows rolled down, our favorite playlist blasting, and you singing every single lyric."
-  }
+    image: "photo4.jpg",
+    title: "lovely sweet giftsss",
+    location: "my home on some day",
+    desc: "i made you all these sweet and lovely gifts to remind you that you are relly special to me<3"
+  },
+  {
+    image: "photo5.jpg",
+    title: "random vc",
+    location: "my home on september 18 2026 10:19 pm",
+    desc: "we had fun talking and flirting and making each other blush and kiches<3333333"
+  },
+  {
+    image: "photo6.png",
+    title: "ONLINEE DATEE",
+    location: "my home on october 25",
+    desc: "we playedd doodle and many other games and we spent time togather, i love spending time with you cutie. mwahahhahha and then we took this photobooth to keep as memoryy."
+  },
+  {
+    image: "photo7.png",
+    title: "Our first vc as a couplee",
+    location: "my home on 19 january",
+    desc: "we talked abt things tht i don remember but i remember you always blushing apove. it was one of our first calls as a couple ra, i love you alwayss"
+  },
+  {
+    image: "photo9.png",
+    title: "turmeric face laya cutiee :)",
+    location: "randomm vccc on april 26 on 9:16 pm",
+    desc: "you called me after applying turmeric on your face. when you called me back in december 2025, it was our first call and you had turmeric apove looking like smiley emoji still so fucking cuteeeeeeee<3333"
+  },
+  {
+    image: "photo10.png",
+    title: "fav picc :o",
+    location: "your hometown on 25 october",
+    desc: "you sent me this pic saying dad took. it became one of my fac pics of you. looking like a baby eating ice cream you lit a baby di."
+  },
+  {
+    image: "photo8.jpg",
+    title: "wonderful beautiful saree queennn :O",
+    location: "your home on april 2",
+    desc: "you said you wanted to try a saree you were going to wear for a wedding to attend. so you wore it and showed me. and istg you looked so stunning. idk im just madly in love with you baby"
+  },
+  {
+    image: "photo11.png",
+    title: "DIWALI DOLLII",
+    location: "your hometown on nov 9",
+    desc: "before you went to burst crackers you called me and showed your outfit and you looked so GOOODDDD, YOU MELTING MEEEE I WANT TO SQUEEZE YOU TO DEATH."
+  },
+  {
+    image: "photo12.png",
+    title: "RANDOM VCC 33 while nap",
+    location: "Home on november 14 2:55 pm",
+    desc: "we talked and kiched and you were covering blanket around yourself like a baby so adorableee! and then after call we fell asleep togatherr mwahh"
+  }   
 ];
 
 const defaultTimeline = [
