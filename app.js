@@ -15,7 +15,7 @@ const defaultProfile = {
   anniversary: "2025-01-1022T00:00:00",
   quote: "In a world full of billion people. i choose you, i love youu so muchhh mwahhahahah you the best girlfriend in the entire universe!!<333",
   letterText: "I built this tiny website to keep this as our memory, and to see how far we have come all this way to where we are now.\n\nMwahhh for filling my days with joy, your laugh, your patience, and the purest love I have ever known and mwah for always being with me, udk how grateful i am to be with you, laya.\n\nNo matter how busy the world gets, this place will always be here to remind us of our love and memory of us and we will keeping cherishing each other, fighting, ragebaiting and getting pissed over small things and still flirting and laughing with each other. i want this for life, laya. i love you babygurl.",
-  letterSigner: "Your Yatin<3"
+  letterSigner: "Your Yatin❤️"
 };
 
 const defaultSlides = [
