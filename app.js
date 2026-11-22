@@ -68,7 +68,7 @@ const defaultSlides = [
     desc: "you called me after applying turmeric on your face. when you called me back in december 2025, it was our first call and you had turmeric apove looking like smiley emoji still so fucking cuteeeeeeee<3333"
   },
   {
-    image: "photo10.png",
+    image: "photo10.jpg",
     title: "fav picc :o",
     location: "your hometown on 25 october",
     desc: "you sent me this pic saying dad took. it became one of my fac pics of you. looking like a baby eating ice cream you lit a baby di."
