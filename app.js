@@ -580,7 +580,7 @@ document.getElementById('restart-match-btn')?.addEventListener('click', initMemo
 const quizQuestions = [
   {
     q: "Who takes longer to get ready when we go out?",
-    options: ["Definitely Her! 💄", "Me (Alex) 🕶️", "It's an exact tie ⏱️", "Whoever woke up last 😴"],
+    options: ["Definitely Her! 💄", "Me (YATII) 🕶️", "It's an exact tie ⏱️", "Whoever woke up last 😴"],
     answer: 2,
     cheer: "we get ready at same time cuz we bath togather ;)"
   },
